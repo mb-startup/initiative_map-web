@@ -3,7 +3,7 @@
 	<div class="container content">
 		<div class="row justify-content-end">
 			<div class="invite col-3">
-				<a href="#">Выдвинуть инициативу</a>
+				<a href="/vydvizhenie-peticzii/">Выдвинуть инициативу</a>
 			</div>
 		</div>
 		<div class="title-actual col-3">

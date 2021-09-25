@@ -108,6 +108,15 @@ a:hover {
 	margin-top:5px;
 }
 
+.address {
+	display: flex;
+}
+
+.address>ul>li {
+	list-style-type: none;
+	margin-left: -25px;
+}
+
 .like {
 	display: flex;
 	padding:10px 25px;
@@ -165,9 +174,6 @@ a:hover {
 	font-weight: 600;
 }
 
-.footer-text {
-	margin-bottom: 100px;
-}
 
 .number, .post {
 	font-size: 30px;
@@ -244,6 +250,7 @@ a:hover {
 	background-color: #0275D8;
 	padding: 10px 20px;
 	margin-bottom: 20px;
+	border-radius: 10px;
 }
 
 .com-box>img {
@@ -255,7 +262,9 @@ a:hover {
 }
 
 .com-box>p {
-	margin:auto 20% auto auto;
+	margin:auto 10% auto auto;
+	font-weight: 500;
+	font-size: 20px;
 }
 
 .about>h1,.about>h2,.about>p {
