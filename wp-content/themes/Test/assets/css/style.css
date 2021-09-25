@@ -1,0 +1,263 @@
+body {
+	margin: 0;
+	padding: 0;	
+	background-color: #ECEEEF;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.header>li:hover>a {
+	color: white;
+}
+
+.navbar {
+	background-color: #0275D8;
+	padding: 0 12px;
+}
+
+.header>li>a {
+	font-size: 18px;
+	margin: 0;
+	font-weight: 600;
+}
+
+.header>li {
+	margin: 8px 0;
+	list-style-type: none;
+}
+
+.header>li>a>i, .header>li>a>div>i {
+	margin-right: 5px;
+}
+
+.current_page_item>a {
+	color: white;
+}
+
+.profile {
+	background-color: #FF5A5A;
+	margin:-8px !important;
+	padding: 8px;
+}
+
+.side-bar {
+	margin-top: 10px;
+}
+
+.dropdown>button {
+	border: 1px solid #BFBFBF;
+}
+
+.btn-search {
+	border: 1px solid #BFBFBF;
+}
+
+.search>input {
+	border: 1px solid #BFBFBF;
+}
+
+.title {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.content {
+	background-color: white;
+}
+
+.petition {
+	padding: 15px;
+	margin-bottom: 50px;
+}
+
+.img-pet {
+	text-align:center;
+}
+
+.img-pet>img {
+	width: 100%;
+}
+
+.text {
+	background-color: #A6A8FF;
+	padding: 15px 25px;
+}
+
+.text>h1 {
+	font-size: 30px;
+}
+
+.text>h2 {
+	padding-bottom:60px;
+	font-size: 20px;
+}
+
+.type,.address {
+	font-weight: 600;
+	padding: 15px 25px;
+	background-color: #A6A8FF;
+	margin-top:5px;
+}
+
+.like {
+	display: flex;
+	padding:10px 25px;
+	background-color: #ECEEEF;
+}
+
+.img-like {
+	font-size: 25px;
+}
+
+.number {
+	margin-left: auto;
+	font-size: 25px;
+}
+
+.pagination {
+	justify-content: center;
+}
+
+.pag {
+	margin:0;
+	padding:10px 20px;
+	border: 1px solid #BFBFBF;
+	font-size: 25px;
+	color: #0275D8;
+}
+
+
+.next {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.prev {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.active {
+	background-color: #0275D8;
+	color: white;
+}
+
+.pictures,.post,.number {
+	display: flex;
+}
+
+.pictures>.photos {
+	margin-right: 20px;
+}
+
+.photos {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.footer-text {
+	margin-bottom: 100px;
+}
+
+.number, .post {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.post>.map, .number>.tel {
+	margin-left: 10px;
+}
+
+.number>i, .post>i {
+	font-size: 50px;
+}
+
+.content {
+	padding-bottom: 30px;
+	padding-top:30px; 
+}
+
+.footer {
+	background-color: #BFBFBF;
+	padding:30px 0;
+}
+
+.actual	{
+	display: flex;
+	background-color: #A6A8FF;
+}
+
+.actual>.img-pet>img {
+	padding: 20px;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.title-actual {
+	background-color: #FF9700;
+	padding: 5px 0;
+	margin: 10px 0 40px 0;
+}
+
+.title-actual>h3 {
+	text-align: center;
+	margin:0;
+}
+
+.title-actual>h3>img {
+	width: 20px;
+	height: 35px;
+}
+
+.invite {
+	background-color: #0275D8;
+	padding: 5px 10px;
+	margin-right: 15px;
+	border-radius: 5px;
+}
+
+.invite>a {
+	font-size: 18px;
+	margin: 0;
+	font-weight: 600;
+	color: white;
+}
+
+.index-map {
+	text-align: center;
+	font-size: 45px;
+	margin-bottom: 30px;
+}
+
+.com-box {
+	display: flex;
+	background-color: #0275D8;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+
+.com-box>img {
+	border-radius: 10px;
+}
+
+.com-box>h3 {
+	margin:auto 20px;
+}
+
+.com-box>p {
+	margin:auto 20% auto auto;
+}
+
+.about>h1,.about>h2,.about>p {
+	text-align: center;
+}
