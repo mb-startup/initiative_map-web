@@ -39,7 +39,7 @@
 						?>">
 					</div>
 					<div class="text">
-						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?><img src="<?php echo bloginfo('template_url'); ?>/assets/img/fire.png" alt="" height="35px" width="auto"></a></h1>
 						<h2><?php the_content(); ?></h2>
 					</div>
 					<div class="type"><?php the_tags( 'Тип: ', ' > '); ?></div>
