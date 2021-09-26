@@ -81,15 +81,23 @@ a:hover {
 
 .img-pet {
 	text-align:center;
+	position: relative;
+    overflow:hidden;
+    height:220px;
 }
 
 .img-pet>img {
-	width: 100%;
+	width: 120%;
+	position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 .text {
 	background-color: #A6A8FF;
 	padding: 15px 25px;
+	height: 250px;
 }
 
 .text>h1 {
@@ -121,10 +129,11 @@ a:hover {
 	display: flex;
 	padding:10px 25px;
 	background-color: #ECEEEF;
+	height: 60px;
 }
 
 .img-like {
-	font-size: 25px;
+	font-size: 30px;
 }
 
 .number {
@@ -221,7 +230,7 @@ a:hover {
 }
 
 .title-actual>h3>img {
-	width: 20px;
+	width: auto;
 	height: 35px;
 }
 

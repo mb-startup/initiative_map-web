@@ -1,6 +1,6 @@
 <div class="fpsml-select-field <?php echo (!empty( $field_details['select_multiple'] )) ? 'fpsml-multiple-select' : ''; ?>">
     <select name="<?php echo esc_attr( $field_key ) ?><?php if ( !empty( $field_details['select_multiple'] ) ) { ?>[]<?php } ?>" <?php if ( !empty( $field_details['select_multiple'] ) ) { ?>multiple="multiple"<?php } ?>>
-        <option value=""><?php echo (!empty( $field_details['first_option_label'] )) ? esc_html( $field_details['first_option_label'] ) : esc_html__( sprintf( 'Choose %s', $taxonomy_details->label ), 'frontend-post-submission-manager-lite' ); ?></option>
+        <option value=""><?php echo (!empty( $field_details['first_option_label'] )) ? esc_html( $field_details['first_option_label'] ) : esc_html__( sprintf( 'Выбери %s', 'город' ), 'frontend-post-submission-manager-lite' ); ?></option>
         <?php
         $child_of = !empty( $field_details['child_of'] ) ? $field_details['child_of'] : 0;
         $terms = get_terms( $taxonomy, array( 'hide_empty' => 0, 'child_of' => $child_of ) );

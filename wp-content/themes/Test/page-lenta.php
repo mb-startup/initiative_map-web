@@ -64,16 +64,20 @@
 					<div class="type"><?php the_tags( 'Тип: ', ' > '); ?></div>
 					<div class="address">Город: <?php the_category(); ?> </div>
 					<div class="like">
-						<div class="img-like"><i class="fa fa-heart-o" aria-hidden="true" style="color:red;"></i></div>
-						<div class="number"><?php echo do_shortcode('[wp_ulike_counter]'); ?></div>
+						<span class="img-like"><i class="fa fa-heart-o" aria-hidden="true" style="color:red;"></i></span>
+						<span class="number"><?php echo do_shortcode('[wp_ulike_counter]'); ?></span>
 					</div>
 				</div>
+
 
 				<?php
 					}
 					wp_reset_postdata();
 
 				?>
+
+
+
 
 
 
