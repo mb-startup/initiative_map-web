@@ -8,8 +8,16 @@
 	get_header();
 ?>
 <div class="container">
-	<?php echo do_shortcode('[wp-recall]'); ?>
+	<?php if ( is_user_logged_in() ) {
+			echo do_shortcode('[wp-recall]');
+		}
+		else {
+			echo do_shortcode('[wordpress_social_login]');
+		}
+	 ?>
+
 </div>
 <?php 
 	get_footer();
 ?>
+

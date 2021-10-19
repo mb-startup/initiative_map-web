@@ -34,7 +34,7 @@
 			<?php 
 				$posts = get_posts( array(
 					'numberposts' => -1,
-					'category'    => 0,
+					'category'    => 20,
 					'orderby'     => 'date',
 					'order'       => 'DESC',
 					'post_type'   => 'post',
@@ -64,8 +64,8 @@
 					<div class="type"><?php the_tags( 'Тип: ', ' > '); ?></div>
 					<div class="address">Город: <?php the_category(); ?> </div>
 					<div class="like">
-						<span class="img-like"><i class="fa fa-heart-o" aria-hidden="true" style="color:red;"></i></span>
-						<span class="number"><?php echo do_shortcode('[wp_ulike_counter]'); ?></span>
+						<span class="img-like"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i><span class="number"><?php echo do_shortcode('[wp_ulike_counter]'); ?></span></span>
+						<span class="img-comment"><i class="fa fa-comment " aria-hidden="true"></i><span class="number"><?php echo comments_number(0,1,'%'); ?></span></span>
 					</div>
 				</div>
 

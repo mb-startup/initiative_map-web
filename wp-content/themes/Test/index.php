@@ -1,13 +1,13 @@
 <?php get_header() ?>
 
 	<div class="container content">
-		<div class="row justify-content-end">
+		<div class="row">
 			<div class="invite col-3">
 				<a href="/vydvizhenie-peticzii/">Выдвинуть инициативу</a>
 			</div>
 		</div>
-		<div class="title-actual col-3">
-			<h3>Актуальное <img src="<?php echo bloginfo('template_url'); ?>/assets/img/fire.png" alt=""></h3>
+		<div class="title-actual">
+			<h3>Актуальное</h3>
 			
 		</div>
 		<div class="row">
@@ -39,14 +39,14 @@
 						?>">
 					</div>
 					<div class="text">
-						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?><img src="<?php echo bloginfo('template_url'); ?>/assets/img/fire.png" alt="" height="35px" width="auto"></a></h1>
+						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 						<h2><?php the_content(); ?></h2>
 					</div>
 					<div class="type"><?php the_tags( 'Тип: ', ' > '); ?></div>
-					<div class="address">Город: <?php the_category('','single'); ?> </div>
+					<div class="address">Город: <?php the_category('','single'); ?> <img src="<?php echo bloginfo('template_url'); ?>/assets/img/fire.png" alt="" height="35px" width="auto"></div>
 					<div class="like">
-						<span class="img-like"><i class="fa fa-heart-o" aria-hidden="true" style="color:red;"></i></span>
-						<span class="number"><?php echo do_shortcode('[wp_ulike_counter]'); ?></span>
+						<span class="img-like"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i><span class="number"><?php echo do_shortcode('[wp_ulike_counter]'); ?></span></span>
+						<span class="img-comment"><i class="fa fa-comment " aria-hidden="true"></i><span class="number"><?php echo comments_number(0,1,'%'); ?></span></span>
 					</div>
 				</div>
 

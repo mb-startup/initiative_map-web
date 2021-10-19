@@ -18,10 +18,15 @@
       // remove it from the array
       unset( $categories[$index] );
     }
+    if ( 'Петиции' === $category->name ) {
+      // remove it from the array
+      unset( $categories[$index] );
+    }
   }
   return $categories;
 }
 add_filter( 'get_the_categories', 'filter_get_the_category', 10, 2 );
+
 
 
 

@@ -18,7 +18,12 @@
 			<?php the_content(); // Выводим содержимое страницы ?>
 
 		</article>
+
 	</div> <!-- .post .page -->
+	<?php if ( comments_open() || get_comments_number() ) {
+					comments_template();
+				}
+				?>
 </div> <!-- .content -->
 <?php
 	// Добавляем содержимое файла footer.php 

@@ -16,18 +16,21 @@ a:hover {
 }
 
 .header>li:hover>a {
-	color: white;
+	color: #015399;
 }
 
 .navbar {
-	background-color: #0275D8;
+	background-color: white;
 	padding: 0 12px;
 }
 
 .header>li>a {
 	font-size: 18px;
 	margin: 0;
-	font-weight: 600;
+	font-weight: 700;
+	color:#0275D8;
+	padding-bottom: 7px;
+	border-bottom: 4px solid red;
 }
 
 .header>li {
@@ -40,14 +43,20 @@ a:hover {
 }
 
 .current_page_item>a {
-	color: white;
+	color: red !important;
 }
 
-.profile {
+/*.profile {
 	background-color: #FF5A5A;
 	margin:-8px !important;
 	padding: 8px;
+	color: white;
+	border:none ;
 }
+
+.profile:hover {
+	color:#D8D8D8;
+}*/
 
 .side-bar {
 	margin-top: 10px;
@@ -95,29 +104,34 @@ a:hover {
 }
 
 .text {
-	background-color: #A6A8FF;
-	padding: 15px 25px;
-	height: 250px;
+	padding: 15px 15px;
+	height: 150px;
 }
 
 .text>h1 {
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .text>h2 {
-	padding-bottom:60px;
+	padding-bottom:30px;
 	font-size: 20px;
+}
+
+.address>img {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
 }
 
 .type,.address {
 	font-weight: 600;
 	padding: 15px 25px;
-	background-color: #A6A8FF;
 	margin-top:5px;
 }
 
 .address {
 	display: flex;
+	position:relative;
 }
 
 .address>ul>li {
@@ -132,13 +146,32 @@ a:hover {
 	height: 60px;
 }
 
-.img-like {
+.img-like>i {
 	font-size: 30px;
+	vertical-align: middle;
 }
 
-.number {
-	margin-left: auto;
+.img-like>.number {
+	margin:0 15px;
 	font-size: 25px;
+	color: red;
+	font-weight: 600;
+	vertical-align: middle;
+}
+
+.img-comment>i {
+	font-size: 30px;
+	vertical-align: middle;
+	color: #C400C6;
+	margin-top:-4px;
+}
+
+.img-comment>.number {
+	margin:0 15px;
+	font-size: 25px;
+	color: #C400C6;
+	font-weight: 600;
+	vertical-align: middle;
 }
 
 .pagination {
@@ -169,7 +202,7 @@ a:hover {
 	color: white;
 }
 
-.pictures,.post,.number {
+.pictures,.post, .number-footer {
 	display: flex;
 }
 
@@ -184,17 +217,22 @@ a:hover {
 }
 
 
-.number, .post {
+.post {
 	font-size: 30px;
 	margin-bottom: 15px;
 }
 
-.post>.map, .number>.tel {
+.post>.map-footer, .number-footer>.tel {
 	margin-left: 10px;
 }
 
-.number>i, .post>i {
+.number-footer>i, .post>i {
 	font-size: 50px;
+}
+
+.number-footer,.map-footer {
+	font-size: 30px;
+	vertical-align: middle;
 }
 
 .content {
@@ -221,24 +259,23 @@ a:hover {
 .title-actual {
 	background-color: #FF9700;
 	padding: 5px 0;
-	margin: 10px 0 40px 0;
+	margin: 10px auto 40px auto;
+	width: 20%;
 }
 
 .title-actual>h3 {
 	text-align: center;
 	margin:0;
-}
-
-.title-actual>h3>img {
-	width: auto;
-	height: 35px;
+	font-weight: 600;
 }
 
 .invite {
 	background-color: #0275D8;
 	padding: 5px 10px;
 	margin-right: 15px;
-	border-radius: 5px;
+	border-radius: 3px;
+	margin-left: 10px;
+	text-align: center;
 }
 
 .invite>a {
@@ -283,6 +320,7 @@ a:hover {
 .map {
 	margin: 20px 0 50px 0;
 }
+
 
 .news>h2 {
 	margin:20px 0;

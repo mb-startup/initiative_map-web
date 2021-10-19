@@ -34,13 +34,13 @@
 					</div>
 				</div>
 				<div class="col-4">
-					<div class="number">
+					<div class="number-footer">
 						<i class="fa fa-phone" aria-hidden="true"></i>
 						<div class="tel">66-66-66</div>
 					</div>
 					<div class="post">
 						<i class="fa fa-map-marker" aria-hidden="true"></i>
-						<div class="map">ул. Союзная, д. 144</div>
+						<div class="map-footer">ул. Союзная, д. 144</div>
 					</div>
 				</div>
 			</div>
