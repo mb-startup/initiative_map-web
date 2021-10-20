@@ -16,7 +16,6 @@
 							};
 						?>">
 			<?php the_content(); // Выводим содержимое страницы ?>
-
 		</article>
 
 	</div> <!-- .post .page -->

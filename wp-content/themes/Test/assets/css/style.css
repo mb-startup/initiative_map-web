@@ -365,3 +365,17 @@ a:hover {
 	margin: auto 0;	
 	margin-right: 5px;
 }
+
+.signin {
+	text-align: center;
+	font-size: 30px;
+	min-height: 60vh;
+}
+
+.signin-text {
+	margin-top: 20%;
+}
+
+.ms-res-ctn {
+	position: relative;
+}
