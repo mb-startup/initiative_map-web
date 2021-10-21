@@ -59,12 +59,12 @@
 					</div>
 					<div class="text">
 						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-						<h2><?php the_content(); ?></h2>
+						<h2><?php the_excerpt(); ?></h2>
 					</div>
 					<div class="type"><?php the_tags( 'Тип: ', ' > '); ?></div>
-					<div class="address">Город: <?php the_category(); ?> </div>
+					<div class="address">Город: <?php the_field('City'); ?> </div>
 					<div class="like">
-						<span class="img-like"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i><span class="number"><?php echo do_shortcode('[wp_ulike_counter]'); ?></span></span>
+						<span class="img-like"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i><span class="number"><?php the_field('like'); ?></span></span>
 						<span class="img-comment"><i class="fa fa-comment " aria-hidden="true"></i><span class="number"><?php echo comments_number(0,1,'%'); ?></span></span>
 					</div>
 				</div>

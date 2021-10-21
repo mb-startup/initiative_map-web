@@ -9,7 +9,7 @@
 ?>
 <div class="container content">
 	<div class="map">
-		<?php echo do_shortcode('[shmMap id="66"]');?>	
+		<?php echo do_shortcode('[shmMap id="66" map="true"]');?>	
 	</div>	
 	</div>
 

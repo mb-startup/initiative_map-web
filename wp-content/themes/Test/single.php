@@ -7,6 +7,9 @@
 		<?php the_post(); // Получаем данные о странице ?>
 		<article class="page__article">
 			<h1 class="page__title"><?php the_title(); // Заголовок страницы ?></h1>
+			<?php 
+				if(in_category(20)):?>
+			<h2>Город: <?php the_field('City'); ?></h2>
 			<img width="200px" src="<?php 
 							if (has_post_thumbnail()) {
 								the_post_thumbnail_url();
@@ -15,6 +18,7 @@
 								
 							};
 						?>">
+			<?php endif;?>
 			<?php the_content(); // Выводим содержимое страницы ?>
 		</article>
 

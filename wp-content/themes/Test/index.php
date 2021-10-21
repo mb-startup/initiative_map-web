@@ -3,7 +3,7 @@
 	<div class="container content">
 		<div class="row">
 			<div class="invite col-3">
-				<a href="/vydvizhenie-peticzii/">Выдвинуть инициативу</a>
+				<a href="/lichnyj-kabinet/?user=<?php echo get_current_user_id(); ?>&tab=iniz">Выдвинуть инициативу</a>
 			</div>
 		</div>
 		<div class="title-actual">
@@ -14,9 +14,10 @@
 
 			<?php 
 				$posts = get_posts( array(
-					'numberposts' => -1,
-					'category'    => 9,
-					'orderby'     => 'date',
+					'numberposts' => 3,
+					'category'    => 20,
+					'orderby'     => 'meta_value',
+					'meta_key'  =>'like',
 					'order'       => 'DESC',
 					'post_type'   => 'post',
 					'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
@@ -40,12 +41,12 @@
 					</div>
 					<div class="text">
 						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-						<h2><?php the_content(); ?></h2>
+						<h2><?php the_excerpt(); ?></h2>
 					</div>
 					<div class="type"><?php the_tags( 'Тип: ', ' > '); ?></div>
-					<div class="address">Город: <?php the_category('','single'); ?> <img src="<?php echo bloginfo('template_url'); ?>/assets/img/fire.png" alt="" height="35px" width="auto"></div>
+					<div class="address">Город: <?php the_field('City'); ?> <img src="<?php echo bloginfo('template_url'); ?>/assets/img/fire.png" alt="" height="35px" width="auto"></div>
 					<div class="like">
-						<span class="img-like"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i><span class="number"><?php echo do_shortcode('[wp_ulike_counter]'); ?></span></span>
+						<span class="img-like"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i><span class="number"><?php the_field('like'); ?></span></span>
 						<span class="img-comment"><i class="fa fa-comment " aria-hidden="true"></i><span class="number"><?php echo comments_number(0,1,'%'); ?></span></span>
 					</div>
 				</div>

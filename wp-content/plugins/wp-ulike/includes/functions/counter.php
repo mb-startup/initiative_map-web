@@ -26,6 +26,7 @@ if( ! function_exists( 'wp_ulike_update_meta_counter_value' ) ){
 	function wp_ulike_update_meta_counter_value( $ID, $value, $type, $status, $is_distinct = true, $prev_value = '' ){
 		$distinct = !$is_distinct ? 'total' : 'distinct';
 		$meta_key = sprintf( 'count_%s_%s', $distinct, $status );
+		update_post_meta($ID, 'like', $value);
 		return wp_ulike_update_meta_data( $ID, $type, $meta_key, $value, $prev_value );
 	}
 }
