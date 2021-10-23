@@ -29,7 +29,7 @@ return;
  
 <!-- You can start editing here. -->
  
-<?php if ( have_comments() ) : ?>
+<?php if ( have_comments('type=comment&callback=my_custom_comment') ) : ?>
 <h3 id="comments">
 <?php
 if ( 1 == get_comments_number() ) {
@@ -49,7 +49,7 @@ number_format_i18n( get_comments_number() ), '&#8220;' . get_the_title() . '&#82
 </div>
  
 <ol class="commentlist">
-<?php wp_list_comments();?>
+<?php wp_list_comments('type=comment&callback=better_commets');?>
 </ol>
  
 <div class="navigation">
@@ -68,12 +68,10 @@ number_format_i18n( get_comments_number() ), '&#8220;' . get_the_title() . '&#82
 <?php endif; ?>
 <?php endif; ?>
  
-<?php //comment_form(); ?>
+<?php if(is_user_logged_in()): ?>
 <?php
 $fields = array(
-'author' => '<p class="comment-form-author"><label for="author">' . __( 'Name' ) . ($req ? '<span class="required">*</span>' : '') . '</label><br><input type="text" id="author" name="author" class="author" value="' . esc_attr($commenter['comment_author']) . '" placeholder="" pattern="[A-Za-zА-Яа-я]{3,}" maxlength="30" autocomplete="on" tabindex="1" required' . $aria_req . '></p>',
-'email' => '<p class="comment-form-email"><label for="email">' . __( 'Email') . ($req ? '<span class="required">*</span>' : '') . '</label><br><input type="email" id="email" name="email" class="email" value="' . esc_attr($commenter['comment_author_email']) . '" placeholder="admin@stepkinblog.ru" maxlength="30" autocomplete="on" tabindex="2" required' . $aria_req . '></p>',
-'url' => '<p class="comment-form-url"><label for="url">' . __( 'Website' ) . '</label><br><input type="url" id="url" name="url" class="site" value="' . esc_attr($commenter['comment_author_url']) . '" placeholder="stepkinblog.ru" maxlength="30" tabindex="3" autocomplete="on"></p>'
+
 );
  
 $args = array(
@@ -84,3 +82,8 @@ $args = array(
 );
 comment_form($args);
 ?>
+
+<?php else: ?>
+<h2>Для того, чтобы добавлять комментарии, нужно <a style="text-decoration: underline;" href="/lichnyj-kabinet/">авторизироваться</a></h2>
+
+<?php endif; ?>

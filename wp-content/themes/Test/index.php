@@ -27,7 +27,8 @@
 					setup_postdata($post);
 				    // формат вывода the_title() ...
 				    ?>
-				<div class="petition col-xl-4 col-md-6">
+				<div onclick="location.href='<?php the_permalink(); ?>';" class="petition col-xl-4 col-md-6">
+					
 					<div class="img-pet">
 						<img src="
 						<?php 
@@ -40,7 +41,7 @@
 						?>">
 					</div>
 					<div class="text">
-						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+						<h1><?php the_title(); ?></h1>
 						<h2><?php the_excerpt(); ?></h2>
 					</div>
 					<div class="type"><?php the_tags( 'Тип: ', ' > '); ?></div>
@@ -49,6 +50,7 @@
 						<span class="img-like"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i><span class="number"><?php the_field('like'); ?></span></span>
 						<span class="img-comment"><i class="fa fa-comment " aria-hidden="true"></i><span class="number"><?php echo comments_number(0,1,'%'); ?></span></span>
 					</div>
+				
 				</div>
 
 				<?php
@@ -74,7 +76,7 @@
 					    // формат вывода the_title() ...
 					    ?>
 
-					    <div class="news-list col-4">
+					    <div onclick="location.href='<?php the_permalink(); ?>';" class="news-list col-4">
 							<div class="news-text">
 								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								<p><?php the_content(); ?></p>

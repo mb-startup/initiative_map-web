@@ -86,6 +86,11 @@ a:hover {
 .petition {
 	padding: 15px;
 	margin-bottom: 50px;
+	cursor: pointer;
+}
+
+.petition:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .img-pet {
@@ -331,6 +336,7 @@ a:hover {
 }
 .news-list {
 	padding: 20px 10px;
+	cursor: pointer;
 }
 
 .news-text{
@@ -383,4 +389,22 @@ a:hover {
 
 .rcl-subtab-menu {
 	display: none;
+}
+
+.comment-img {
+	display: flex;
+}
+
+.comment-body {
+	border:1px solid grey;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+li.comment {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+.wpulike {
+	padding: 0;
 }
