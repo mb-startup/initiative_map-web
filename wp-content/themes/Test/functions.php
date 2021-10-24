@@ -27,10 +27,10 @@
 }
 add_filter( 'get_the_categories', 'filter_get_the_category', 10, 2 );
 
-add_action('map_exsist', 'your_function_name', 10, 3 );
+/*add_action('map_exsist', 'your_function_name', 10, 3 );
 function your_function_name( $form_id, $post_id, $form_settings ) {
     echo do_shortcode('[shmMap id="66"]');
-}
+}*/
 
 
 if( ! function_exists( 'better_commets' ) ):
